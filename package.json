@@ -9,7 +9,7 @@
   "homepage": "https://github.com/agtm1199/build-kg-viewer",
   "author": "build-kg contributors",
   "engines": {
-    "node": "^14.16.0"
+    "node": ">=18.0.0"
   },
   "scripts": {
     "setup": "npm install && npm-run-all setup-front setup-backend",

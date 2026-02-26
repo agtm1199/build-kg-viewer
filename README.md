@@ -3,7 +3,7 @@
 [![GitHub Stars](https://img.shields.io/github/stars/agtm1199/build-kg-viewer?style=social)](https://github.com/agtm1199/build-kg-viewer/stargazers)
 [![Version](https://img.shields.io/badge/version-0.1.0-green.svg)](https://github.com/agtm1199/build-kg-viewer/releases/tag/v0.1.0)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Node.js](https://img.shields.io/badge/node-%5E14.16.0-blue.svg)](https://nodejs.org/)
+[![Node.js](https://img.shields.io/badge/node-%3E%3D18-blue.svg)](https://nodejs.org/)
 [![CI](https://github.com/agtm1199/build-kg-viewer/actions/workflows/node.js.yml/badge.svg)](https://github.com/agtm1199/build-kg-viewer/actions/workflows/node.js.yml)
 
 <!-- [![Discord](https://img.shields.io/discord/YOUR_DISCORD_ID?label=Discord&logo=discord)](https://discord.gg/YOUR_INVITE) -->

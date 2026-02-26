@@ -1,0 +1,95 @@
+.faceted-filter-sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--g-panel-width-sm);
+  height: 100%;
+  background: var(--g-color-bg);
+  border-right: 1px solid var(--g-color-border);
+  box-shadow: var(--g-shadow-panel);
+  z-index: var(--g-z-panel);
+  display: flex;
+  flex-direction: column;
+  animation: panelSlideLeft var(--g-anim-duration) var(--g-anim-easing);
+}
+.facet-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--g-space-md) var(--g-space-lg);
+  border-bottom: 1px solid var(--g-color-border-subtle);
+}
+.facet-header-title {
+  font-weight: 600;
+  font-size: var(--g-font-size-lg);
+  color: var(--g-color-text);
+}
+.facet-active-count {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 7px;
+  border-radius: 6px;
+  background: var(--g-color-accent);
+  color: var(--g-color-accent-text);
+  font-size: var(--g-font-size-sm);
+  font-weight: 700;
+}
+.facet-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--g-space-md) var(--g-space-lg);
+}
+.facet-clear-btn {
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  margin-bottom: var(--g-space-md);
+  border: 1px solid var(--g-color-border);
+  border-radius: var(--g-radius-md);
+  background: var(--g-color-bg);
+  color: var(--g-color-text-muted);
+  font-size: var(--g-font-size-body);
+  cursor: pointer;
+}
+.facet-clear-btn:hover {
+  background: var(--g-color-bg-muted);
+  color: var(--g-color-text);
+}
+.facet-group {
+  margin-bottom: var(--g-space-lg);
+}
+.facet-title {
+  font-size: var(--g-font-size-sm);
+  font-weight: 600;
+  color: var(--g-color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+.facet-item {
+  display: flex;
+  align-items: center;
+  gap: var(--g-space-sm);
+  padding: var(--g-space-xs) 6px;
+  border-radius: var(--g-radius-sm);
+  cursor: pointer;
+  font-size: var(--g-font-size-body);
+  margin-bottom: 2px;
+}
+.facet-item:hover {
+  background: var(--g-color-bg-muted);
+}
+.facet-item.active {
+  background: var(--g-color-bg-active);
+}
+.facet-item input[type="checkbox"] {
+  accent-color: var(--g-color-accent);
+}
+.facet-item-label {
+  flex: 1;
+  color: var(--g-color-text);
+}
+.facet-item-count {
+  color: var(--g-color-text-muted);
+  font-size: var(--g-font-size-sm);
+}

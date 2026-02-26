@@ -1,0 +1,29 @@
+.graph-tooltip {
+  position: absolute;
+  background: var(--g-color-bg);
+  border: 1px solid var(--g-color-border);
+  border-radius: var(--g-radius-lg);
+  padding: var(--g-space-sm) var(--g-space-md);
+  box-shadow: var(--g-shadow-dropdown);
+  z-index: var(--g-z-tooltip);
+  max-width: 300px;
+  pointer-events: none;
+  font-size: var(--g-font-size-body);
+  line-height: 1.5;
+}
+.graph-tooltip-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: var(--g-radius-xl);
+  font-size: var(--g-font-size-sm);
+  font-weight: 600;
+  margin-bottom: var(--g-space-xs);
+}
+.tooltip-prop {
+  padding: 1px 0;
+  word-break: break-word;
+  color: var(--g-color-text-secondary);
+}
+.tooltip-prop strong {
+  color: var(--g-color-text);
+}

@@ -1,0 +1,13 @@
+.grouping-toolbar-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--g-space-xs);
+  padding: 2px var(--g-space-sm);
+  margin-left: auto;
+  font-size: var(--g-font-size-sm);
+  color: var(--g-color-text-muted);
+  border-left: 1px solid var(--g-color-border-subtle);
+}
+.grouping-toolbar-indicator strong {
+  color: var(--g-color-text);
+}

@@ -1,0 +1,149 @@
+/* ==============================================
+   Graph Design Tokens
+   Orange · Black · White · Grey — Brand Identity
+   ============================================== */
+
+:root {
+  /* Colors - Neutral */
+  --g-color-bg: #ffffff;
+  --g-color-bg-subtle: #F9FAFB;
+  --g-color-bg-muted: #F3F4F6;
+  --g-color-bg-hover: #F3F4F6;
+  --g-color-bg-active: rgba(0,0,0,0.04);
+
+  --g-color-text: #111827;
+  --g-color-text-secondary: #4B5563;
+  --g-color-text-muted: #9CA3AF;
+  --g-color-text-disabled: #D1D5DB;
+
+  --g-color-border: #E5E7EB;
+  --g-color-border-subtle: #F3F4F6;
+
+  /* Colors - Brand (Orange) */
+  --g-color-accent: #F97316;
+  --g-color-accent-hover: #EA580C;
+  --g-color-accent-light: #FDBA74;
+  --g-color-accent-bg: rgba(249,115,22,0.06);
+  --g-color-accent-glow: rgba(249,115,22,0.12);
+  --g-color-accent-text: #ffffff;
+  --g-color-accent-subtle: #FFF7ED;
+  --g-color-primary: #F97316;
+  --g-color-primary-hover: #EA580C;
+  --g-color-link: #F97316;
+  --g-color-danger: #EF4444;
+
+  /* Spacing */
+  --g-space-xs: 4px;
+  --g-space-sm: 8px;
+  --g-space-md: 12px;
+  --g-space-lg: 16px;
+  --g-space-xl: 24px;
+
+  /* Panel dimensions */
+  --g-panel-width-sm: 280px;
+  --g-panel-width-md: 300px;
+  --g-panel-width-lg: 320px;
+
+  /* Typography */
+  --g-font-size-xs: 10px;
+  --g-font-size-sm: 11px;
+  --g-font-size-body: 12px;
+  --g-font-size-md: 13px;
+  --g-font-size-lg: 14px;
+
+  /* Radius */
+  --g-radius-sm: 4px;
+  --g-radius-md: 6px;
+  --g-radius-lg: 6px;
+  --g-radius-xl: 8px;
+
+  /* Shadows — flat, border-based */
+  --g-shadow-panel: 0 0 0 1px rgba(0,0,0,0.08);
+  --g-shadow-panel-r: 0 0 0 1px rgba(0,0,0,0.08);
+  --g-shadow-dropdown: 0 0 0 1px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.08);
+  --g-shadow-modal: 0 0 0 1px rgba(0,0,0,0.08), 0 16px 32px rgba(0,0,0,0.12);
+  --g-shadow-subtle: none;
+
+  /* Z-Index Layers */
+  --g-z-search: 10;
+  --g-z-breadcrumb: 11;
+  --g-z-panel: 20;
+  --g-z-panel-top: 22;
+  --g-z-tooltip: 30;
+  --g-z-batch: 35;
+  --g-z-dropdown: 40;
+  --g-z-modal: 100;
+  --g-z-overlay: 9998;
+
+  /* Animation */
+  --g-anim-duration: 150ms;
+  --g-anim-easing: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* App Shell */
+  --g-frame-radius: 6px;
+  --g-frame-shadow: 0 0 0 1px rgba(0,0,0,0.08);
+  --g-chip-bg: #F3F4F6;
+  --g-chip-bg-hover: #E5E7EB;
+}
+
+/* Dark mode token overrides */
+#dark-theme:checked ~ * {
+  --g-color-bg: #111111;
+  --g-color-bg-subtle: #1A1A1A;
+  --g-color-bg-muted: #222222;
+  --g-color-bg-hover: #2A2A2A;
+  --g-color-bg-active: rgba(255,255,255,0.06);
+
+  --g-color-text: #F3F4F6;
+  --g-color-text-secondary: #D1D5DB;
+  --g-color-text-muted: #6B7280;
+  --g-color-text-disabled: #4B5563;
+
+  --g-color-border: #2A2A2A;
+  --g-color-border-subtle: #1F1F1F;
+
+  /* Brand (Orange in dark) */
+  --g-color-accent: #F97316;
+  --g-color-accent-hover: #FB923C;
+  --g-color-accent-light: #C2410C;
+  --g-color-accent-bg: rgba(249,115,22,0.08);
+  --g-color-accent-glow: rgba(249,115,22,0.15);
+  --g-color-accent-text: #ffffff;
+  --g-color-accent-subtle: rgba(249,115,22,0.06);
+  --g-color-primary: #F97316;
+  --g-color-primary-hover: #FB923C;
+  --g-color-link: #FB923C;
+
+  --g-shadow-panel: 0 0 0 1px rgba(255,255,255,0.08);
+  --g-shadow-panel-r: 0 0 0 1px rgba(255,255,255,0.08);
+  --g-shadow-dropdown: 0 0 0 1px rgba(255,255,255,0.06), 0 4px 12px rgba(0,0,0,0.3);
+  --g-shadow-modal: 0 0 0 1px rgba(255,255,255,0.06), 0 16px 32px rgba(0,0,0,0.4);
+  --g-shadow-subtle: none;
+
+  --g-frame-shadow: 0 0 0 1px rgba(255,255,255,0.08);
+  --g-chip-bg: #222222;
+  --g-chip-bg-hover: #333333;
+}
+
+/* Global focus-visible */
+.graph-toolbar-btn:focus-visible,
+.node-detail-close:focus-visible,
+.batch-bar-btn:focus-visible,
+.batch-bar-clear:focus-visible,
+.facet-clear-btn:focus-visible,
+.algo-run-btn:focus-visible,
+.algo-reset-btn:focus-visible,
+.algo-select:focus-visible,
+.pathfinder-run-btn:focus-visible,
+.pathfinder-clear-btn:focus-visible,
+.range-reset-btn:focus-visible,
+.range-prop-select:focus-visible,
+.tpl-use-btn:focus-visible,
+.tpl-run-btn:focus-visible,
+.snapshot-save-btn:focus-visible,
+.snapshot-confirm-btn:focus-visible,
+.snapshot-cancel-btn:focus-visible,
+.breadcrumb-item:focus-visible {
+  outline: 2px solid var(--g-color-accent);
+  outline-offset: 2px;
+}

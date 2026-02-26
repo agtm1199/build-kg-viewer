@@ -1,0 +1,22 @@
+.graph-search-bar {
+  position: absolute;
+  top: var(--g-space-sm);
+  left: var(--g-space-md);
+  width: 260px;
+  z-index: var(--g-z-search);
+}
+.graph-search-bar .ant-input-affix-wrapper {
+  border-radius: 6px !important;
+  background: rgba(255,255,255,0.92) !important;
+  backdrop-filter: blur(4px);
+  border: 1px solid var(--g-color-border) !important;
+  box-shadow: var(--g-shadow-subtle);
+}
+.graph-search-bar .ant-input-affix-wrapper:focus,
+.graph-search-bar .ant-input-affix-wrapper-focused {
+  border-color: var(--g-color-primary) !important;
+  box-shadow: 0 0 0 2px rgba(249,115,22,0.1) !important;
+}
+.graph-search-bar .ant-select-dropdown {
+  border-radius: 6px;
+}

@@ -1,0 +1,96 @@
+.schema-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: var(--g-z-overlay);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.schema-card {
+  background: var(--g-color-bg);
+  border-radius: var(--g-radius-xl);
+  width: 560px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--g-shadow-modal);
+  overflow: hidden;
+}
+.schema-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--g-space-md) var(--g-space-lg);
+  border-bottom: 1px solid var(--g-color-border-subtle);
+}
+.schema-title {
+  font-weight: 600;
+  font-size: var(--g-font-size-lg);
+  color: var(--g-color-text);
+}
+.schema-graph-area {
+  height: 280px;
+  border-bottom: 1px solid var(--g-color-border-subtle);
+  background: var(--g-color-bg-subtle);
+}
+.schema-graph-area > div {
+  width: 100% !important;
+  height: 100% !important;
+}
+.schema-props-area {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--g-space-md) var(--g-space-lg);
+  max-height: 250px;
+}
+.schema-label-row {
+  margin-bottom: 10px;
+}
+.schema-label-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--g-font-size-body);
+  font-weight: 600;
+  color: var(--g-color-text);
+  margin-bottom: var(--g-space-xs);
+  cursor: pointer;
+}
+.schema-label-name:hover {
+  text-decoration: underline;
+}
+.schema-label-count {
+  font-weight: 400;
+  color: var(--g-color-text-muted);
+  font-size: var(--g-font-size-sm);
+}
+.schema-label-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.schema-props-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--g-space-xs);
+  margin-left: var(--g-space-lg);
+}
+.schema-prop-chip {
+  padding: 1px var(--g-space-sm);
+  background: var(--g-color-bg-hover);
+  border-radius: 6px;
+  font-size: var(--g-font-size-xs);
+  color: var(--g-color-text-secondary);
+}
+.schema-empty {
+  text-align: center;
+  padding: 40px;
+  color: var(--g-color-text-disabled);
+  font-size: var(--g-font-size-md);
+}

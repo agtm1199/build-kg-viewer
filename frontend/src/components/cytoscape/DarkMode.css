@@ -1,0 +1,410 @@
+/* =============================================
+   Dark Mode — Overrides for non-tokenized elements
+   Orange Brand · Dark theme
+   ============================================= */
+
+/* --- Chart Area Background --- */
+#dark-theme:checked ~ * .chart-area {
+  background: #141414;
+}
+
+/* --- Graph Search Bar (Ant Design overrides) --- */
+#dark-theme:checked ~ * .graph-search-bar .ant-input-affix-wrapper {
+  background: #1A1A1A !important;
+  border-color: #2A2A2A !important;
+  color: #F3F4F6;
+}
+#dark-theme:checked ~ * .graph-search-bar .ant-input-affix-wrapper:focus,
+#dark-theme:checked ~ * .graph-search-bar .ant-input-affix-wrapper-focused {
+  border-color: #F97316 !important;
+  box-shadow: 0 0 0 2px rgba(249,115,22,0.15) !important;
+}
+#dark-theme:checked ~ * .graph-search-bar .ant-input {
+  color: #F3F4F6;
+}
+#dark-theme:checked ~ * .graph-search-bar .ant-input::placeholder {
+  color: #6B7280;
+}
+
+/* --- Breadcrumb Nav (hardcoded rgba background) --- */
+#dark-theme:checked ~ * .breadcrumb-nav {
+  background: rgba(30,30,30,0.95);
+}
+#dark-theme:checked ~ * .breadcrumb-item {
+  color: #F3F4F6;
+}
+
+/* --- Loading Overlay (hardcoded rgba background) --- */
+#dark-theme:checked ~ * .query-loading-overlay {
+  background: rgba(10,10,10,0.85);
+}
+
+/* --- Minimap / Navigator (third-party) --- */
+#dark-theme:checked ~ * .cytoscape-navigator-container {
+  background: #1A1A1A;
+  border-color: #2A2A2A;
+}
+
+/* --- Schema Viewer graph area (canvas bg) --- */
+#dark-theme:checked ~ * .schema-graph-area {
+  background: #141414;
+}
+
+/* --- Query History Panel (non-tokenized) --- */
+#dark-theme:checked ~ * .query-history-panel {
+  background: #111111;
+  border-color: #2A2A2A;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+#dark-theme:checked ~ * .query-history-tabs {
+  background: #1A1A1A;
+  border-bottom-color: #2A2A2A;
+}
+#dark-theme:checked ~ * .query-history-tab {
+  color: #6B7280;
+}
+#dark-theme:checked ~ * .query-history-tab:hover {
+  color: #F3F4F6;
+}
+#dark-theme:checked ~ * .query-history-tab.active {
+  color: #F97316;
+  border-bottom-color: #F97316;
+}
+#dark-theme:checked ~ * .query-history-row {
+  border-bottom-color: #222222;
+}
+#dark-theme:checked ~ * .query-history-row:hover {
+  background: rgba(255,255,255,0.04);
+}
+#dark-theme:checked ~ * .query-history-cmd {
+  color: #F3F4F6;
+}
+#dark-theme:checked ~ * .query-history-star {
+  color: #4B5563;
+}
+#dark-theme:checked ~ * .query-history-star.starred {
+  color: #F97316;
+}
+#dark-theme:checked ~ * .query-history-empty {
+  color: #6B7280;
+}
+
+/* --- Algo run button in dark --- */
+#dark-theme:checked ~ * .algo-run-btn {
+  color: #ffffff;
+}
+#dark-theme:checked ~ * .snapshot-save-btn {
+  color: #ffffff;
+}
+#dark-theme:checked ~ * .snapshot-confirm-btn {
+  color: #ffffff;
+}
+#dark-theme:checked ~ * .tpl-run-btn {
+  color: #ffffff;
+}
+
+/* --- Batch bar hover (dark) --- */
+#dark-theme:checked ~ * .batch-bar-btn:hover {
+  color: #ffffff;
+}
+
+/* --- Sidebar active (dark) --- */
+#dark-theme:checked ~ * #sidebar.active {
+  background: #111111;
+  border-color: #2A2A2A;
+  box-shadow: none;
+}
+
+/* --- Editor division bg (dark) --- */
+#dark-theme:checked ~ * .editor-divison,
+#dark-theme:checked ~ * .editor-division {
+  background-color: transparent;
+}
+
+/* --- Legend / Footer (dark) --- */
+#dark-theme:checked ~ * .nodeLegend,
+#dark-theme:checked ~ * .edgeLegend {
+  background-color: #1A1A1A;
+  border-bottom-color: #2A2A2A;
+}
+#dark-theme:checked ~ * .chart-footer-area {
+  background-color: #1A1A1A;
+  border-top-color: #2A2A2A;
+}
+
+/* --- CypherResult Tab (dark) --- */
+#dark-theme:checked ~ * .legend-button-area {
+  background: #1A1A1A;
+  border-left-color: #2A2A2A;
+}
+#dark-theme:checked ~ * .legend-tab-btn {
+  color: #6B7280;
+}
+#dark-theme:checked ~ * .legend-tab-btn:hover {
+  background: #222222;
+  color: #F3F4F6;
+}
+#dark-theme:checked ~ * .legend-tab-btn.active {
+  background: rgba(249,115,22,0.08);
+  color: #F97316;
+  border-left-color: #F97316;
+}
+
+/* --- Node / Edge / Property chips (dark) --- */
+#dark-theme:checked ~ * .node-item,
+#dark-theme:checked ~ * .edge-item,
+#dark-theme:checked ~ * .propertie-item,
+#dark-theme:checked ~ * .graph-item {
+  background-color: #222222;
+  color: #F3F4F6;
+}
+#dark-theme:checked ~ * .node-item:hover,
+#dark-theme:checked ~ * .edge-item:hover,
+#dark-theme:checked ~ * .propertie-item:hover {
+  background-color: #333333;
+  color: #F3F4F6;
+  box-shadow: none;
+}
+#dark-theme:checked ~ * .graph-item-clicked {
+  background-color: #F97316;
+  color: #ffffff;
+}
+
+/* --- Table row synced (dark) --- */
+#dark-theme:checked ~ * .table-row-synced,
+#dark-theme:checked ~ * .table-row-synced td {
+  background-color: rgba(255,255,255,0.06) !important;
+}
+#dark-theme:checked ~ * .table-row-synced:hover td {
+  background-color: rgba(255,255,255,0.1) !important;
+}
+
+/* --- Card header (dark) --- */
+#dark-theme:checked ~ * .card-header {
+  border-bottom-color: #2A2A2A;
+}
+
+/* --- Session buttons (dark hover) --- */
+#dark-theme:checked ~ * .close_session:hover {
+  background-color: #c0392b;
+}
+
+/* --- Top bar buttons (dark) --- */
+#dark-theme:checked ~ * .top-bar-btn {
+  background: #1A1A1A;
+  border-color: #333;
+  color: #9CA3AF;
+}
+#dark-theme:checked ~ * .top-bar-btn:hover {
+  background: #222;
+  border-color: #444;
+  color: #F3F4F6;
+}
+#dark-theme:checked ~ * .top-bar-btn.refresh-btn:hover {
+  color: #F97316;
+  border-color: #F97316;
+  background: rgba(249,115,22,0.1);
+}
+#dark-theme:checked ~ * .top-bar-btn.disconnect-btn:hover {
+  color: #EF4444;
+  border-color: #EF4444;
+  background: rgba(239,68,68,0.1);
+}
+#dark-theme:checked ~ * .graph-select .ant-select-selector {
+  background: #1A1A1A !important;
+  border-color: #333 !important;
+  color: #F3F4F6 !important;
+}
+#dark-theme:checked ~ * .graph-select .ant-select-selector:hover {
+  border-color: #F97316 !important;
+}
+#dark-theme:checked ~ * .graph-select .ant-select-selection-item {
+  color: #F3F4F6 !important;
+}
+#dark-theme:checked ~ * .graph-select .ant-select-arrow {
+  color: #6B7280;
+}
+
+/* --- Scrollbar (dark) --- */
+#dark-theme:checked ~ * ::-webkit-scrollbar-thumb {
+  background-color: rgba(255,255,255,0.12);
+}
+#dark-theme:checked ~ * ::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+/* --- Dark sidebar section labels --- */
+#dark-theme:checked ~ * .sidebar-item > b {
+  color: #6B7280;
+}
+
+/* --- Dark mode editor --- */
+#dark-theme:checked ~ * .editor {
+  background: #111111;
+  border-color: rgba(255,255,255,0.06);
+  box-shadow: none;
+}
+#dark-theme:checked ~ * .editor:focus-within {
+  border-color: rgba(249,115,22,0.3);
+  box-shadow: 0 0 0 2px rgba(249,115,22,0.06);
+}
+
+/* --- Dark mode sidebar separators --- */
+#dark-theme:checked ~ * .sidebar-divider {
+  border-color: #2A2A2A;
+}
+#dark-theme:checked ~ * .sidebar-separator-v {
+  background-color: #2A2A2A;
+}
+#dark-theme:checked ~ * .sidebar-separator-h {
+  border-color: #2A2A2A;
+}
+
+/* --- Dark mode graph toolbar --- */
+#dark-theme:checked ~ * .graph-toolbar {
+  background: #1A1A1A;
+  border-color: #2A2A2A;
+}
+#dark-theme:checked ~ * .graph-toolbar-btn:hover {
+  background: #222222;
+  color: #F3F4F6;
+}
+
+/* --- Dark mode ant overrides --- */
+#dark-theme:checked ~ * .ant-select-selector {
+  background: #1A1A1A !important;
+  border-color: #2A2A2A !important;
+  color: #F3F4F6 !important;
+}
+#dark-theme:checked ~ * .ant-select-arrow {
+  color: #6B7280;
+}
+#dark-theme:checked ~ * .ant-select-dropdown {
+  background: #1A1A1A;
+  border-color: #2A2A2A;
+}
+#dark-theme:checked ~ * .ant-select-item {
+  color: #D1D5DB;
+}
+#dark-theme:checked ~ * .ant-select-item-option-active {
+  background: #222222;
+}
+#dark-theme:checked ~ * .ant-select-item-option-selected {
+  background: rgba(255,255,255,0.08);
+  color: #F3F4F6;
+}
+
+/* --- Dark CodeMirror --- */
+#dark-theme:checked ~ * .CodeMirror {
+  background: #111111 !important;
+}
+
+/* --- Dark modal --- */
+#dark-theme:checked ~ * .ant-modal-content {
+  background: #111111;
+  color: #F3F4F6;
+}
+#dark-theme:checked ~ * .ant-modal-header {
+  background: #1A1A1A;
+  border-bottom-color: #2A2A2A;
+}
+#dark-theme:checked ~ * .ant-modal-title {
+  color: #F3F4F6;
+}
+
+/* --- AI Chat Panel (dark) --- */
+#dark-theme:checked ~ * .ai-chat-panel {
+  background: #111111;
+  border-left-color: #2A2A2A;
+}
+#dark-theme:checked ~ * .ai-header {
+  border-bottom-color: #2A2A2A;
+}
+#dark-theme:checked ~ * .ai-header-title {
+  color: #F3F4F6;
+}
+#dark-theme:checked ~ * .ai-header-btn:hover {
+  background: #222222;
+  color: #F3F4F6;
+}
+#dark-theme:checked ~ * .ai-quick-actions {
+  border-bottom-color: #222222;
+}
+#dark-theme:checked ~ * .ai-action-chip {
+  background: #1A1A1A;
+  border-color: #2A2A2A;
+  color: #D1D5DB;
+}
+#dark-theme:checked ~ * .ai-action-chip:hover {
+  background: #222222;
+  border-color: #333333;
+}
+#dark-theme:checked ~ * .ai-empty-title {
+  color: #F3F4F6;
+}
+#dark-theme:checked ~ * .ai-empty-subtitle {
+  color: #6B7280;
+}
+#dark-theme:checked ~ * .ai-message-user .ai-message-content {
+  background: #1A1A1A;
+  color: #F3F4F6;
+}
+#dark-theme:checked ~ * .ai-message-assistant .ai-message-content {
+  color: #D1D5DB;
+}
+#dark-theme:checked ~ * .ai-code-block {
+  border-color: #2A2A2A;
+}
+#dark-theme:checked ~ * .ai-code-header {
+  background: #1A1A1A;
+  border-bottom-color: #2A2A2A;
+}
+#dark-theme:checked ~ * .ai-code-actions button {
+  background: #222222;
+  border-color: #333333;
+  color: #D1D5DB;
+}
+#dark-theme:checked ~ * .ai-code-actions button:hover {
+  background: #333333;
+}
+#dark-theme:checked ~ * .ai-input-area {
+  border-top-color: #2A2A2A;
+}
+#dark-theme:checked ~ * .ai-input {
+  background: #1A1A1A;
+  border-color: #2A2A2A;
+  color: #F3F4F6;
+}
+#dark-theme:checked ~ * .ai-input:focus {
+  border-color: #F97316;
+}
+#dark-theme:checked ~ * .ai-input::placeholder {
+  color: #6B7280;
+}
+#dark-theme:checked ~ * .ai-send-btn {
+  background: #F97316;
+  color: #ffffff;
+}
+#dark-theme:checked ~ * .ai-send-btn:hover {
+  background: #EA580C;
+}
+#dark-theme:checked ~ * .ai-send-btn:disabled {
+  background: #222222;
+  color: #4B5563;
+}
+#dark-theme:checked ~ * .ai-stop-btn {
+  background: #1A1A1A;
+  border-color: #2A2A2A;
+  color: #D1D5DB;
+}
+#dark-theme:checked ~ * .ai-stop-btn:hover {
+  background: #222222;
+}
+
+/* --- Dark mode focus ring --- */
+#dark-theme:checked ~ * .graph-toolbar-btn:focus-visible,
+#dark-theme:checked ~ * .node-detail-close:focus-visible,
+#dark-theme:checked ~ * .batch-bar-btn:focus-visible,
+#dark-theme:checked ~ * .breadcrumb-item:focus-visible {
+  outline-color: #F97316;
+}

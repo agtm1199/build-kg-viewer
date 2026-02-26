@@ -1,0 +1,38 @@
+.shortcuts-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: var(--g-z-overlay);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shortcuts-card {
+  background: var(--g-color-bg);
+  border-radius: var(--g-radius-xl);
+  padding: 28px 36px;
+  box-shadow: var(--g-shadow-modal);
+  min-width: 320px;
+}
+.shortcuts-table {
+  width: 100%;
+}
+.shortcuts-table td {
+  padding: 6px var(--g-space-sm);
+  font-size: var(--g-font-size-lg);
+}
+.shortcuts-table kbd {
+  display: inline-block;
+  padding: 3px var(--g-space-sm);
+  font-size: var(--g-font-size-body);
+  font-family: 'DM Sans', sans-serif;
+  background: var(--g-color-bg-muted);
+  border: 1px solid var(--g-color-border);
+  border-radius: var(--g-radius-sm);
+  box-shadow: 0 1px 0 var(--g-color-border);
+  min-width: 28px;
+  text-align: center;
+}

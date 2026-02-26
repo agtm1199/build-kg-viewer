@@ -1,0 +1,14 @@
+.editor-division{
+    display: flex;
+}
+.content-row{
+    flex-wrap: nowrap;
+    display: flex;
+    justify-items: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+.row{
+    flex-wrap: nowrap;
+    overflow-y: scroll;
+}

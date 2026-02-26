@@ -1,0 +1,177 @@
+.algorithms-panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--g-panel-width-sm);
+  height: 100%;
+  background: var(--g-color-bg);
+  border-right: 1px solid var(--g-color-border);
+  box-shadow: var(--g-shadow-panel);
+  z-index: var(--g-z-panel);
+  display: flex;
+  flex-direction: column;
+  animation: panelSlideLeft var(--g-anim-duration) var(--g-anim-easing);
+}
+.algo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--g-space-md) var(--g-space-lg);
+  border-bottom: 1px solid var(--g-color-border-subtle);
+}
+.algo-title {
+  font-weight: 600;
+  font-size: var(--g-font-size-lg);
+  color: var(--g-color-text);
+}
+.algo-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--g-space-md) var(--g-space-lg);
+}
+.algo-section {
+  margin-bottom: 14px;
+}
+.algo-section-title {
+  font-size: var(--g-font-size-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--g-color-text-muted);
+  margin-bottom: 6px;
+}
+.algo-select {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid var(--g-color-border);
+  border-radius: var(--g-radius-sm);
+  font-size: var(--g-font-size-body);
+  background: var(--g-color-bg);
+  color: var(--g-color-text);
+  cursor: pointer;
+}
+.algo-select:focus {
+  outline: none;
+  border-color: var(--g-color-accent);
+}
+.algo-run-btn {
+  width: 100%;
+  padding: 7px 14px;
+  background: var(--g-color-accent);
+  color: var(--g-color-accent-text);
+  border: none;
+  border-radius: var(--g-radius-sm);
+  font-size: var(--g-font-size-body);
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: var(--g-space-sm);
+}
+.algo-run-btn:hover {
+  background: var(--g-color-accent-hover);
+}
+.algo-run-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.algo-heatmap-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--g-space-sm) 0;
+  font-size: var(--g-font-size-body);
+  color: var(--g-color-text-secondary);
+}
+.algo-heatmap-toggle label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.algo-reset-btn {
+  width: 100%;
+  padding: 6px 12px;
+  background: transparent;
+  color: var(--g-color-text-muted);
+  border: 1px solid var(--g-color-border);
+  border-radius: var(--g-radius-sm);
+  font-size: var(--g-font-size-sm);
+  cursor: pointer;
+  margin-top: var(--g-space-xs);
+}
+.algo-reset-btn:hover {
+  border-color: var(--g-color-accent);
+  color: var(--g-color-text);
+}
+.algo-warning {
+  background: var(--g-color-bg-active);
+  border: 1px solid var(--g-color-accent);
+  border-radius: var(--g-radius-sm);
+  padding: 6px var(--g-space-sm);
+  font-size: var(--g-font-size-sm);
+  color: #8a6d3b;
+  margin-bottom: var(--g-space-sm);
+}
+.algo-results {
+  margin-top: 10px;
+}
+.algo-result-row {
+  display: flex;
+  align-items: center;
+  padding: var(--g-space-xs) 0;
+  border-bottom: 1px solid var(--g-color-bg-hover);
+  font-size: var(--g-font-size-sm);
+  gap: 6px;
+}
+.algo-result-rank {
+  width: 20px;
+  font-weight: 700;
+  color: var(--g-color-text-muted);
+  text-align: right;
+  flex-shrink: 0;
+}
+.algo-result-badge {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 9px;
+  font-size: 9px;
+  color: #fff;
+  font-weight: 600;
+  max-width: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.algo-result-name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--g-color-text);
+}
+.algo-result-score {
+  font-weight: 600;
+  color: var(--g-color-text-secondary);
+  flex-shrink: 0;
+  min-width: 40px;
+  text-align: right;
+}
+.algo-computing {
+  text-align: center;
+  padding: var(--g-space-xl);
+  color: var(--g-color-text-muted);
+  font-size: var(--g-font-size-body);
+}
+.algo-legend {
+  display: flex;
+  align-items: center;
+  gap: var(--g-space-xs);
+  margin-top: var(--g-space-sm);
+  font-size: var(--g-font-size-xs);
+  color: var(--g-color-text-muted);
+}
+.algo-gradient-bar {
+  height: 8px;
+  flex: 1;
+  border-radius: var(--g-radius-sm);
+  background: linear-gradient(to right, #3498db, #f1c40f, #e74c3c);
+}

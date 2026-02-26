@@ -1,0 +1,7 @@
+{
+    "name": "build-kg-viewer",
+    "short_name": "build-kg-viewer",
+    "theme_color": "#1E1E1E",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}

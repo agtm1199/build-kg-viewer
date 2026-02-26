@@ -1,0 +1,129 @@
+.snapshot-dropdown {
+  position: absolute;
+  top: 0;
+  right: 310px;
+  width: 260px;
+  max-height: 350px;
+  background: var(--g-color-bg);
+  border: 1px solid var(--g-color-border);
+  border-radius: var(--g-radius-md);
+  box-shadow: var(--g-shadow-dropdown);
+  z-index: var(--g-z-dropdown);
+  display: flex;
+  flex-direction: column;
+  animation: fadeSlideDown var(--g-anim-duration) var(--g-anim-easing);
+}
+.snapshot-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--g-space-sm) var(--g-space-md);
+  border-bottom: 1px solid var(--g-color-border);
+  background: var(--g-color-bg-subtle);
+  border-radius: var(--g-radius-md) var(--g-radius-md) 0 0;
+}
+.snapshot-title {
+  font-weight: 600;
+  font-size: var(--g-font-size-body);
+  color: var(--g-color-text);
+}
+.snapshot-save-btn {
+  width: calc(100% - 24px);
+  margin: var(--g-space-sm) var(--g-space-md);
+  padding: 7px 14px;
+  background: var(--g-color-accent);
+  color: var(--g-color-accent-text);
+  border: none;
+  border-radius: var(--g-radius-sm);
+  font-size: var(--g-font-size-body);
+  font-weight: 600;
+  cursor: pointer;
+}
+.snapshot-save-btn:hover {
+  background: var(--g-color-accent-hover);
+}
+.snapshot-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--g-space-xs) 0;
+}
+.snapshot-row {
+  display: flex;
+  align-items: center;
+  padding: 6px var(--g-space-md);
+  gap: var(--g-space-sm);
+  cursor: pointer;
+  border-bottom: 1px solid var(--g-color-bg-muted);
+}
+.snapshot-row:hover {
+  background: var(--g-color-bg-active);
+}
+.snapshot-name {
+  flex: 1;
+  font-size: var(--g-font-size-body);
+  color: var(--g-color-text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.snapshot-time {
+  font-size: var(--g-font-size-xs);
+  color: var(--g-color-text-disabled);
+  flex-shrink: 0;
+}
+.snapshot-delete {
+  background: none;
+  border: none;
+  color: var(--g-color-text-disabled);
+  cursor: pointer;
+  padding: 2px var(--g-space-xs);
+  font-size: var(--g-font-size-body);
+  flex-shrink: 0;
+}
+.snapshot-delete:hover {
+  color: var(--g-color-danger);
+}
+.snapshot-empty {
+  padding: var(--g-space-lg);
+  text-align: center;
+  color: var(--g-color-text-disabled);
+  font-size: var(--g-font-size-body);
+}
+.snapshot-input-row {
+  display: flex;
+  gap: 6px;
+  padding: var(--g-space-sm) var(--g-space-md);
+  border-bottom: 1px solid var(--g-color-border);
+}
+.snapshot-input {
+  flex: 1;
+  padding: 5px var(--g-space-sm);
+  border: 1px solid var(--g-color-border);
+  border-radius: var(--g-radius-sm);
+  font-size: var(--g-font-size-body);
+  background: var(--g-color-bg);
+  color: var(--g-color-text);
+}
+.snapshot-input:focus {
+  outline: none;
+  border-color: var(--g-color-accent);
+}
+.snapshot-confirm-btn {
+  padding: 6px 12px;
+  background: var(--g-color-accent);
+  color: var(--g-color-accent-text);
+  border: none;
+  border-radius: var(--g-radius-sm);
+  font-size: var(--g-font-size-sm);
+  font-weight: 600;
+  cursor: pointer;
+}
+.snapshot-cancel-btn {
+  padding: 6px 12px;
+  background: transparent;
+  color: var(--g-color-text-muted);
+  border: 1px solid var(--g-color-border);
+  border-radius: var(--g-radius-sm);
+  font-size: var(--g-font-size-sm);
+  cursor: pointer;
+}

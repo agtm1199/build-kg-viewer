@@ -1,0 +1,52 @@
+pre.CodeMirror-placeholder.CodeMirror-line-like{
+    color:grey;
+    opacity: 90%;
+}
+
+/* Auto-complete hint styling */
+.CodeMirror-hints {
+  z-index: 9999 !important;
+  font-family: 'DM Sans', monospace;
+  font-size: 12px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 1px solid #e8e8e8;
+  max-height: 200px;
+}
+
+.CodeMirror-hint {
+  padding: 4px 10px !important;
+  border-radius: 3px;
+}
+
+li.CodeMirror-hint-active {
+  background: #FFF5EC !important;
+  color: #2A2C34 !important;
+}
+
+.cm-hint-keyword {
+  color: #1565C0;
+  font-weight: 600;
+}
+
+.cm-hint-node::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #27ae60;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.cm-hint-edge::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #e67e22;
+  margin-right: 6px;
+  vertical-align: middle;
+}
